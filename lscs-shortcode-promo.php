@@ -106,56 +106,16 @@ function lscs_shortcode_promo($atts)
 
 
     /*
-       $Output = '<h1>Promo call</h1>';
-       $Output = '<h1>Promo call</h1>';
-       $Output .= '<ul>';
-       $Output .= '<li>Persona = ' . $Persona . '</li>';
-       $Output .= '</ul>';
-
 
        //Preview LSCS system status here
        //http://ew2016.teamsite8demo.com:1876/lscs/v1/admin/status
 
-
        $StatusURL = 'http://ew2016.teamsite8demo.com:1876/lscs/v1/admin/status';
 
-
-       $StatusResult = simplexml_load_file($StatusURL) or die("Error: Cannot create object");
-
-       $Output .= '<h3>Status (XML)</h3>';
-       $Output .= '<ul>';
-       $Output .= '<li>' . $StatusResult->repository[0]['name'] . ' is ' . $StatusResult->repository[1]['status'] .  '</li>';
-       $Output .= '<li>' . $StatusResult->repository[1]['name'] . ' is ' . $StatusResult->repository[1]['status'] .  '</li>';
-       $Output .= '</ul>';
-
-       //Preview Student Loan XML here
+     //Preview Student Loan XML here
        //http://ew2016.teamsite8demo.com:1876/lscs-static/37a/ce7/37ace78dd16857c3ba5e9416b50419ed/content/templatedata/LiveSite/Content/data/Promo/Student_Loans.xml
        //
 
-       //This is the base LSCS demo server URL - all REST calls begin with this in the string
-       $BaseURL = 'http://ew2016.teamsite8demo.com:1876/lscs/v1';
-       //The fully-qualified project name
-       $ProjectName = 'project=//ip-172-30-0-41.ec2.internal/default/main/AuraBank';
-
-       $LoanURL = $BaseURL . '/document/path/templatedata/LiveSite/Content/data/Promo/Student_Loans.xml?' . $ProjectName;
-
-       $LoanResult = simplexml_load_file($LoanURL);
-
-
-       $Output .= '<h3>Student Loan Fields (XML)</h3>';
-       $Output .= '<ul>';
-       $Output .= '<li>' . 'Title = ' . $LoanResult->Title . '</li>';
-       $Output .= '<li>' . 'Summary = ' . $LoanResult->Summary . '</li>';
-       $Output .= '<li>' . 'Image = ' . $LoanResult->Images->Image->RelativePath . '</li>';
-       $ImgSrc = $BaseURL . '/document/path' . $LoanResult->Images->Image->RelativePath . '?' . $ProjectName;
-       $Output .= '<img src="' . $ImgSrc . '">';
-       $Output .= '</ul>';
-
-       $Output .= '<h3>Test Image</h3>';
-       $TestSrc = $BaseURL . '/document/path' . '/img/banner/new-york3.jpg' . '?' . $ProjectName;
-       $Output .= '<img src="' . $TestSrc . '">';
-       $TestSrc = $BaseURL . '/document/path' . '/img/banner/skyscraper.jpg' . '?' . $ProjectName;
-       $Output .= '<img src="' . $TestSrc . '">';
    */
 
 

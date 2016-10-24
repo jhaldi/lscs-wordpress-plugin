@@ -142,31 +142,6 @@ function lscs_shortcode_banner($atts)
     return $Output;
 }
 
-/*
-    $curlMeta = curl_init();
-    curl_setopt($curlMeta, CURLOPT_URL, $BaseURL . "/document/path/templatedata/LiveSite/Content/data/Promo/Student_Loans.xml$?format=json&" . $ProjectName);
-    curl_setopt($curlMeta, CURLOPT_RETURNTRANSFER, 1);
-    $resultMeta = curl_exec($curlMeta);
-    curl_close($curlMeta);
-
-    //$jsonResult = $result;
-    $jsonResultMeta = json_decode($resultMeta, true);
-
-        //http://ew2016.teamsite8demo.com:1876/lscs/v1/document/path/templatedata/LiveSite/Promo/data/nofeeira.xml?project=//ip-172-30-0-41.ec2.internal/default/main/AuraBank
-
-    $Output .= '<h3>MetaData (JSON)</h3>';
-    //var_dump( $jsonResultMeta['results']['assets'][0]['metadata']);
-
-    $Output .= '<p>' . 'Count = ' . count($jsonResultMeta['results']['assets'][0]['metadata']) . '</p>';
-    $Output .= '<ul>';
-    $Output .= '<li>' . $jsonResultMeta['results']['assets'][0]['metadata']['/Content/Title'] . '</li>';
-    $Output .= '<li>' . $jsonResultMeta['results']['assets'][0]['metadata']['/Content/Summary'] . '</li>';
-    $Output .= '<li>' . $jsonResultMeta['results']['assets'][0]['metadata']['/Content/Images/Image/RelativePath'] . '</li>';
-    $Output .= '</ul>';
-    $ImgSrc = $BaseURL . '/document/path' . $jsonResultMeta['results']['assets'][0]['metadata']['/Content/Images/Image/RelativePath'] . '?' . $ProjectName;
-    $Output .= '<img src="' . $ImgSrc . '">';
-    $Output .= '<li>' . $ImgSrc . '"</li>';
- */
 
 /*
     LSCS system status
@@ -187,33 +162,6 @@ function lscs_shortcode_banner($atts)
     http://ew2016.teamsite8demo.com:1876/lscs/v1/document/path/templatedata/LiveSite/Content/data/Promo/Student_Loans.xml$?format=json&project=//ip-172-30-0-41.ec2.internal/default/main/AuraBank
 */
 
-/*
-    $curlProjects = curl_init();
-    curl_setopt($curlProjects, CURLOPT_URL, $BaseURL . "/projects?format=json");
-    curl_setopt($curlProjects, CURLOPT_RETURNTRANSFER, 1);
-    $resultProjects = curl_exec($curlProjects);
-    curl_close($curlProjects);
-
-    $jsonResultProjects = json_decode($resultProjects, true);
-
-    $Output .= '<h3>Project Names (JSON)</h3>';
-        $Output .= '<ul>';
-    for ($i = 0; $i < count($jsonResultProjects['projects']); ++$i) {
-        $Output .= '<li>' . $jsonResultProjects['projects'][$i]['name'] . '</li>';
-    }
-    $Output .= '</ul>';
-
-http://ew2016.teamsite8demo.com:1876/lscs/v1/document/path/templatedata/LiveSite/Promo/data/highinterestsavingsaccounts.xml?project=//ip-172-30-0-41.ec2.internal/default/main/AuraBank
-
-http://ew2016.teamsite8demo.com:1876/lscs/v1/document/path/templatedata/LiveSite/Promo/data/highinterestsavingsaccounts.xml*?project=//ip-172-30-0-41.ec2.internal/default/main/AuraBank&format=json
-
-http://ew2016.teamsite8demo.com:1876/lscs/v1/document/path/templatedata/LiveSite/Banner/data/BankThatMovesQuickly.xml?project=//ip-172-30-0-41.ec2.internal/default/main/AuraBank
-
-http://ew2016.teamsite8demo.com:1876/lscs/v1/document/path/templatedata/LiveSite/Banner/data/BankThatMovesQuickly.xml$?project=//ip-172-30-0-41.ec2.internal/default/main/AuraBank
-
-http://ew2016.teamsite8demo.com:1876/lscs/v1/document/path/templatedata/LiveSite/Banner/data/BankThatMovesQuickly.xml$?project=//ip-172-30-0-41.ec2.internal/default/main/AuraBank&format=json
-
-*/
 
 
 
